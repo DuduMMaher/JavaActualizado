@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="JARVIS">
+  <ClassDiagramComponents>
+    <Class name="Armadura" package="Entities" visibility="public" xPosition="400.0" yPosition="225.0">
+      <Fields>
+        <Field name="colorP" type="String" visibility="protected"/>
+        <Field name="colorS" type="String" visibility="protected"/>
+        <Field name="resistencia" type="int" visibility="protected"/>
+        <Field name="bateria" type="float" visibility="protected"/>
+        <Field name="encendido" type="LocalDate" visibility="protected"/>
+        <Field name="apagado" type="LocalDate" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="BotaDer" package="Entities" visibility="public" xPosition="444.0" yPosition="745.0">
+      <Fields>
+        <Field name="activoBDer" type="boolean" visibility="protected"/>
+        <Field name="destruccionBDer" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="BotaIzq" package="Entities" visibility="public" xPosition="231.0" yPosition="745.0">
+      <Fields>
+        <Field name="activoBIzq" type="boolean" visibility="protected"/>
+        <Field name="destruccionBIzq" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Botas" package="Entities" visibility="public" xPosition="348.0" yPosition="473.0">
+      <Fields>
+        <Field name="caminando" type="boolean" visibility="protected"/>
+        <Field name="corriendo" type="boolean" visibility="protected"/>
+        <Field name="propulsando" type="boolean" visibility="protected"/>
+        <Field name="volando" type="boolean" visibility="protected"/>
+        <Field name="inicioBotas" type="LocalDate" visibility="protected"/>
+        <Field name="finBotas" type="LocalDate" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Casco" package="Entities" visibility="public" xPosition="432.0" yPosition="17.0">
+      <Fields>
+        <Field name="encendido" type="boolean" visibility="protected"/>
+        <Field name="activacion" type="LocalDate" visibility="protected"/>
+        <Field name="Desactivacion" type="LocalDate" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="GuanteDer" package="Entities" visibility="public" xPosition="821.0" yPosition="580.0">
+      <Fields>
+        <Field name="activoGDer" type="boolean" visibility="protected"/>
+        <Field name="destruccionGDer" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="GuanteIzq" package="Entities" visibility="public" xPosition="602.0" yPosition="580.0">
+      <Fields>
+        <Field name="activoGIzq" type="boolean" visibility="protected"/>
+        <Field name="destruccionGIzq" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Guantes" package="Entities" visibility="public" xPosition="720.0" yPosition="244.0">
+      <Fields>
+        <Field name="usando" type="boolean" visibility="protected"/>
+        <Field name="volandoGuantes" type="boolean" visibility="protected"/>
+        <Field name="repulsoresG" type="boolean" visibility="protected"/>
+        <Field name="inicioG" type="LocalDate" visibility="protected"/>
+        <Field name="finG" type="LocalDate" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="JARVIS" package="jarvis" visibility="public" xPosition="38.0" yPosition="225.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Entities.Casco" target="Entities.Armadura"/>
+    <IsRelation name="is" source="Entities.GuanteIzq" target="Entities.Guantes"/>
+    <IsRelation name="is" source="Entities.Botas" target="Entities.Armadura"/>
+    <IsRelation name="is" source="Entities.Guantes" target="Entities.Armadura"/>
+    <IsRelation name="is" source="Entities.GuanteDer" target="Entities.Guantes"/>
+    <IsRelation name="is" source="Entities.BotaIzq" target="Entities.Botas"/>
+    <IsRelation name="is" source="Entities.BotaDer" target="Entities.Botas"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

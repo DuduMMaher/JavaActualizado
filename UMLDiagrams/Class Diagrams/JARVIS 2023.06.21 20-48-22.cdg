@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="JARVIS">
+  <ClassDiagramComponents>
+    <Class name="Armadura" package="Entities" visibility="public" xPosition="966.0" yPosition="-261.0">
+      <Fields>
+        <Field name="colorP" type="String" visibility="protected"/>
+        <Field name="colorS" type="String" visibility="protected"/>
+        <Field name="resistencia" type="int" visibility="protected"/>
+        <Field name="bateria" type="float" visibility="protected"/>
+        <Field name="bateriaPje" type="int" visibility="protected"/>
+        <Field name="hEncendido" type="LocalTime" visibility="protected"/>
+        <Field name="hEncParaConsumo" type="LocalTime" visibility="protected"/>
+        <Field name="apagado" type="LocalTime" visibility="protected"/>
+        <Field name="consumo" type="float" visibility="protected"/>
+        <Field name="encendido" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="colorP"/>
+          <Argument type="String" name="colorS"/>
+          <Argument type="int" name="resistencia"/>
+          <Argument type="float" name="bateria"/>
+          <Argument type="LocalTime" name="hEncendido"/>
+          <Argument type="LocalTime" name="apagado"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="colorP"/>
+          <Argument type="String" name="colorS"/>
+          <Argument type="int" name="resistencia"/>
+          <Argument type="LocalTime" name="hEncendido"/>
+          <Argument type="LocalTime" name="apagado"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getColorP" returnType="String" visibility="public"/>
+        <Method name="setColorP" returnType="void" visibility="public">
+          <Argument type="String" name="colorP"/>
+        </Method>
+        <Method name="getColorS" returnType="String" visibility="public"/>
+        <Method name="setColorS" returnType="void" visibility="public">
+          <Argument type="String" name="colorS"/>
+        </Method>
+        <Method name="getResistencia" returnType="int" visibility="public"/>
+        <Method name="setResistencia" returnType="void" visibility="public">
+          <Argument type="int" name="resistencia"/>
+        </Method>
+        <Method name="getBateria" returnType="float" visibility="public"/>
+        <Method name="setBateria" returnType="void" visibility="public">
+          <Argument type="float" name="bateria"/>
+        </Method>
+        <Method name="getBateriaPje" returnType="int" visibility="public"/>
+        <Method name="setBateriaPje" returnType="void" visibility="public">
+          <Argument type="int" name="bateriaPje"/>
+        </Method>
+        <Method name="gethEncendido" returnType="LocalTime" visibility="public"/>
+        <Method name="sethEncendido" returnType="void" visibility="public">
+          <Argument type="LocalTime" name="hEncendido"/>
+        </Method>
+        <Method name="gethEncParaConsumo" returnType="LocalTime" visibility="public"/>
+        <Method name="sethEncParaConsumo" returnType="void" visibility="public">
+          <Argument type="LocalTime" name="hEncParaConsumo"/>
+        </Method>
+        <Method name="getApagado" returnType="LocalTime" visibility="public"/>
+        <Method name="setApagado" returnType="void" visibility="public">
+          <Argument type="LocalTime" name="apagado"/>
+        </Method>
+        <Method name="getConsumo" returnType="float" visibility="public"/>
+        <Method name="setConsumo" returnType="void" visibility="public">
+          <Argument type="float" name="consumo"/>
+        </Method>
+        <Method name="isEncendido" returnType="boolean" visibility="public"/>
+        <Method name="setEncendido" returnType="void" visibility="public">
+          <Argument type="boolean" name="encendido"/>
+        </Method>
+        <Method name="toString3" returnType="String" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="gastoEnergia" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Armadura&gt;" name="im"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="BotaDer" package="Entities" visibility="public" xPosition="-200.0" yPosition="634.0">
+      <Fields>
+        <Field name="activoBDer" type="boolean" visibility="public"/>
+        <Field name="destruccionBDer" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="boolean" name="activoBDer"/>
+          <Argument type="boolean" name="destruccionBDer"/>
+          <Argument type="boolean" name="caminando"/>
+          <Argument type="boolean" name="corriendo"/>
+          <Argument type="boolean" name="volando"/>
+          <Argument type="String" name="colorP"/>
+          <Argument type="String" name="colorS"/>
+          <Argument type="int" name="resistencia"/>
+          <Argument type="LocalTime" name="encendido"/>
+          <Argument type="LocalTime" name="apagado"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="isActivoBDer" returnType="boolean" visibility="public"/>
+        <Method name="setActivoBDer" returnType="void" visibility="public">
+          <Argument type="boolean" name="activoBDer"/>
+        </Method>
+        <Method name="isDestruccionBDer" returnType="boolean" visibility="public"/>
+        <Method name="setDestruccionBDer" returnType="void" visibility="public">
+          <Argument type="boolean" name="destruccionBDer"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="BotaIzq" package="Entities" visibility="public" xPosition="506.0" yPosition="631.0">
+      <Fields>
+        <Field name="activoBIzq" type="boolean" visibility="public"/>
+        <Field name="destruccionBIzq" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="boolean" name="activoBIzq"/>
+          <Argument type="boolean" name="destruccionBIzq"/>
+          <Argument type="boolean" name="caminando"/>
+          <Argument type="boolean" name="corriendo"/>
+          <Argument type="boolean" name="volando"/>
+          <Argument type="String" name="colorP"/>
+          <Argument type="String" name="colorS"/>
+          <Argument type="int" name="resistencia"/>
+          <Argument type="LocalTime" name="encendido"/>
+          <Argument type="LocalTime" name="apagado"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="isActivoBIzq" returnType="boolean" visibility="public"/>
+        <Method name="setActivoBIzq" returnType="void" visibility="public">
+          <Argument type="boolean" name="activoBIzq"/>
+        </Method>
+        <Method name="isDestruccionBIzq" returnType="boolean" visibility="public"/>
+        <Method name="setDestruccionBIzq" returnType="void" visibility="public">
+          <Argument type="boolean" name="destruccionBIzq"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Botas" package="Entities" visibility="public" xPosition="1010.0" yPosition="400.0">
+      <Fields>
+        <Field name="caminando" type="boolean" visibility="protected"/>
+        <Field name="corriendo" type="boolean" visibility="protected"/>
+        <Field name="volando" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="boolean" name="caminando"/>
+          <Argument type="boolean" name="corriendo"/>
+          <Argument type="boolean" name="volando"/>
+          <Argument type="String" name="colorP"/>
+          <Argument type="String" name="colorS"/>
+          <Argument type="int" name="resistencia"/>
+          <Argument type="LocalTime" name="encendido"/>
+          <Argument type="LocalTime" name="apagado"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="isCaminando" returnType="boolean" visibility="public"/>
+        <Method name="setCaminando" returnType="void" visibility="public">
+          <Argument type="boolean" name="caminando"/>
+        </Method>
+        <Method name="isCorriendo" returnType="boolean" visibility="public"/>
+        <Method name="setCorriendo" returnType="void" visibility="public">
+          <Argument type="boolean" name="corriendo"/>
+        </Method>
+        <Method name="isVolando" returnType="boolean" visibility="public"/>
+        <Method name="setVolando" returnType="void" visibility="public">
+          <Argument type="boolean" name="volando"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="gastoEnergia" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Armadura&gt;" name="im"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Casco" package="Entities" visibility="public" xPosition="609.0" yPosition="14.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="colorP"/>
+          <Argument type="String" name="colorS"/>
+          <Argument type="int" name="resistencia"/>
+          <Argument type="LocalTime" name="encendido"/>
+          <Argument type="LocalTime" name="apagado"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="GuanteDer" package="Entities" visibility="public" xPosition="728.0" yPosition="384.0">
+      <Fields>
+        <Field name="activoGDer" type="boolean" visibility="public"/>
+        <Field name="destruccionGDer" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="boolean" name="activoGDer"/>
+          <Argument type="boolean" name="destruccionGDer"/>
+          <Argument type="boolean" name="usando"/>
+          <Argument type="boolean" name="volandoGuantes"/>
+          <Argument type="boolean" name="repulsoresG"/>
+          <Argument type="String" name="colorP"/>
+          <Argument type="String" name="colorS"/>
+          <Argument type="int" name="resistencia"/>
+          <Argument type="LocalTime" name="encendido"/>
+          <Argument type="LocalTime" name="apagado"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="isActivoGDer" returnType="boolean" visibility="public"/>
+        <Method name="setActivoGDer" returnType="void" visibility="public">
+          <Argument type="boolean" name="activoGDer"/>
+        </Method>
+        <Method name="isDestruccionGDer" returnType="boolean" visibility="public"/>
+        <Method name="setDestruccionGDer" returnType="void" visibility="public">
+          <Argument type="boolean" name="destruccionGDer"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="GuanteIzq" package="Entities" visibility="public" xPosition="506.0" yPosition="349.0">
+      <Fields>
+        <Field name="activoGIzq" type="boolean" visibility="public"/>
+        <Field name="destruccionGIzq" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="boolean" name="activoGIzq"/>
+          <Argument type="boolean" name="destruccionGIzq"/>
+          <Argument type="boolean" name="usando"/>
+          <Argument type="boolean" name="volandoGuantes"/>
+          <Argument type="boolean" name="repulsoresG"/>
+          <Argument type="String" name="colorP"/>
+          <Argument type="String" name="colorS"/>
+          <Argument type="int" name="resistencia"/>
+          <Argument type="LocalTime" name="encendido"/>
+          <Argument type="LocalTime" name="apagado"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="isActivoGIzq" returnType="boolean" visibility="public"/>
+        <Method name="setActivoGIzq" returnType="void" visibility="public">
+          <Argument type="boolean" name="activoGIzq"/>
+        </Method>
+        <Method name="isDestruccionGIzq" returnType="boolean" visibility="public"/>
+        <Method name="setDestruccionGIzq" returnType="void" visibility="public">
+          <Argument type="boolean" name="destruccionGIzq"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Guantes" package="Entities" visibility="public" xPosition="628.0" yPosition="65.0">
+      <Fields>
+        <Field name="usando" type="boolean" visibility="protected"/>
+        <Field name="volandoGuantes" type="boolean" visibility="protected"/>
+        <Field name="repulsoresG" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="boolean" name="usando"/>
+          <Argument type="boolean" name="volandoGuantes"/>
+          <Argument type="boolean" name="repulsoresG"/>
+          <Argument type="String" name="colorP"/>
+          <Argument type="String" name="colorS"/>
+          <Argument type="int" name="resistencia"/>
+          <Argument type="LocalTime" name="encendido"/>
+          <Argument type="LocalTime" name="apagado"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="isUsando" returnType="boolean" visibility="public"/>
+        <Method name="setUsando" returnType="void" visibility="public">
+          <Argument type="boolean" name="usando"/>
+        </Method>
+        <Method name="isVolandoGuantes" returnType="boolean" visibility="public"/>
+        <Method name="setVolandoGuantes" returnType="void" visibility="public">
+          <Argument type="boolean" name="volandoGuantes"/>
+        </Method>
+        <Method name="isRepulsoresG" returnType="boolean" visibility="public"/>
+        <Method name="setRepulsoresG" returnType="void" visibility="public">
+          <Argument type="boolean" name="repulsoresG"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="JARVIS" package="jarvis" visibility="public" xPosition="46.0" yPosition="669.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="JarvisServicios" package="Services" visibility="public" xPosition="-13.0" yPosition="41.0">
+      <Fields>
+        <Field name="leer" type="Scanner" visibility="package"/>
+        <Field name="serv" type="Servicios" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="crearGuanteDer" returnType="GuanteDer" visibility="public"/>
+        <Method name="crearGuanteIzq" returnType="GuanteIzq" visibility="public"/>
+        <Method name="crearBotaDer" returnType="BotaDer" visibility="public"/>
+        <Method name="crearBotaIzq" returnType="BotaIzq" visibility="public"/>
+        <Method name="crearCasco" returnType="Casco" visibility="public"/>
+        <Method name="crearArmadura" returnType="Armadura" visibility="public"/>
+        <Method name="mostrarOperatividad" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Armadura&gt;" name="im"/>
+        </Method>
+        <Method name="caminar" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Armadura&gt;" name="im"/>
+        </Method>
+        <Method name="funciona" returnType="boolean" visibility="public">
+          <Argument type="int" name="i"/>
+        </Method>
+        <Method name="detenerIM" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Armadura&gt;" name="im"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="Services.JarvisServicios" target="Entities.GuanteIzq" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Entities.BotaDer" target="Entities.Botas"/>
+    <IsRelation name="is" source="Entities.Botas" target="Entities.Armadura"/>
+    <UseRelation source="Entities.Botas" target="Entities.Armadura" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Entities.Guantes" target="Entities.Armadura"/>
+    <UseRelation source="Services.JarvisServicios" target="Entities.Casco" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Entities.BotaIzq" target="Entities.Botas"/>
+    <UseRelation source="Entities.Armadura" target="Entities.Armadura" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Entities.Casco" target="Entities.Armadura"/>
+    <IsRelation name="is" source="Entities.GuanteIzq" target="Entities.Guantes"/>
+    <IsRelation name="is" source="Entities.GuanteDer" target="Entities.Guantes"/>
+    <UseRelation source="Services.JarvisServicios" target="Entities.BotaDer" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Services.JarvisServicios" target="Entities.BotaIzq" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Services.JarvisServicios" target="Entities.Armadura" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Services.JarvisServicios" target="Entities.GuanteDer" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
